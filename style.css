@@ -41,10 +41,32 @@ body {
   background-color: var(--sidebar);
   color: var(--main);
   font-size: x-large;
+
+  padding: 20px 0 0 20px;
 }
 
 .slidebar-part {
   display: grid;
+}
+
+.slidebar-part a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  padding: 10px 0;
+
+  color: var(--main);
+  text-decoration: none;
+}
+
+.slidebar-part a:hover {
+  opacity: 0.7;
+  border-bottom: 3px solid var(--main);
+}
+
+.slidebar-part img {
+  width: 30px;
 }
 
 /* NAV */
@@ -99,7 +121,7 @@ body {
 }
 
 .button {
-  margin: 0px 20px;
+  margin: 0 20px;
   padding: 10px 20px;
   border-radius: 20px;
 
@@ -110,6 +132,10 @@ body {
   font-size: 1.3em;
 
   cursor: pointer;
+}
+
+.button:last-of-type {
+  margin-right: 0;
 }
 
 .button:hover {
@@ -129,7 +155,7 @@ body {
 }
 
 .body > div {
-  padding: 50px 20px;
+  padding: 50px 20px 0 20px;
 }
 
 .title {
