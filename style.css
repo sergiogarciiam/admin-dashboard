@@ -4,3 +4,58 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+    "slidebar nav nav"
+    "slidebar projects announcements"
+    "slidebar projects trendings";
+}
+
+img {
+  width: 50px;
+}
+
+/* SLIDE BAR */
+.slidebar-container {
+  grid-area: slidebar;
+
+  display: grid;
+  align-content: start;
+  align-items: start;
+  gap: 50px;
+
+  background-color: rgb(47, 97, 97);
+  color: white;
+  font-size: x-large;
+}
+
+.slidebar-part {
+  display: grid;
+}
+
+/* NAV */
+.nav-container {
+  grid-area: nav;
+}
+
+/* PROJECTS */
+.projects-container {
+  grid-area: projects;
+}
+
+/* ANNOUNCEMENTS */
+.announcements-container {
+  grid-area: announcements;
+}
+
+/* TRENDINGS */
+.trendings-container {
+  grid-area: trendings;
+}
