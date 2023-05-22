@@ -105,10 +105,6 @@ body {
   border: none;
 }
 
-.shearch:hover {
-  opacity: var(--hover-effect);
-}
-
 .nav-part2-profile,
 .nav-part1-profile {
   border-radius: 50px;
@@ -137,10 +133,6 @@ body {
 
 .nav-part1-profile {
   cursor: pointer;
-}
-
-.nav-part1-profile:hover {
-  opacity: var(--hover-effect);
 }
 
 .nav-part2-profile {
@@ -172,10 +164,6 @@ body {
 
 .button:last-of-type {
   margin-right: 0;
-}
-
-.button:hover {
-  opacity: var(--hover-effect);
 }
 
 /* BODY */
@@ -229,10 +217,6 @@ body {
   cursor: pointer;
 }
 
-.project:hover {
-  opacity: var(--hover-effect);
-}
-
 .project-icons {
   display: flex;
   gap: 10px;
@@ -267,10 +251,6 @@ body {
   cursor: pointer;
 }
 
-.announcement:hover {
-  opacity: var(--hover-effect);
-}
-
 .announcement:last-of-type {
   padding-bottom: 0;
   border: none;
@@ -297,10 +277,6 @@ body {
   cursor: pointer;
 }
 
-.trending:hover {
-  opacity: var(--hover-effect);
-}
-
 .trending > img {
   width: 40px;
   border-radius: 50px;
@@ -309,4 +285,14 @@ body {
 .trending-name {
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+/* HOVER-OPACITY */
+.shearch:hover,
+.nav-part1-profile:hover,
+.button:hover,
+.announcement:hover,
+.project:hover,
+.trending:hover {
+  opacity: var(--hover-effect);
 }
