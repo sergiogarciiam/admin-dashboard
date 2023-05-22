@@ -4,7 +4,7 @@ An admin dashboard created with html and css with the goal of learning "grid lay
 
 ## Screenshot
 
-![admin-dashboard]()
+![admin-dashboard](./img/dashboard-screenshot.png)
 
 ## Acknowledgements
 
