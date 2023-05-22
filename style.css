@@ -1,9 +1,12 @@
 :root {
   --main: #fff;
   --shearch: #e2e8f0;
+  --letter: #222;
   --sidebar: #1992d4;
   --lines: #f0b429;
   --shadow: #11111165;
+
+  --hover-effect: 0.7;
 
   --font-family: "Roboto", sans-serif;
 }
@@ -17,6 +20,7 @@
 
 body {
   font-family: var(--font-family);
+  color: var(--letter);
 }
 
 .container {
@@ -61,7 +65,7 @@ body {
 }
 
 .slidebar-part a:hover {
-  opacity: 0.7;
+  opacity: var(--hover-effect);
   border-bottom: 3px solid var(--main);
 }
 
@@ -91,11 +95,11 @@ body {
 }
 
 .shearch {
-  flex: 1;
+  flex: 0.8;
 
   border-radius: 20px;
   padding: 10px;
-  margin-right: 300px;
+  margin-left: 20px;
 
   background-color: var(--shearch);
   border: none;
@@ -108,12 +112,40 @@ body {
   width: 50px;
 }
 
+.nav-part1 i:first-of-type {
+  font-size: 20px;
+}
+
+.nav-part1 i:last-of-type {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-part1 i:last-of-type:hover {
+  color: var(--sidebar);
+}
+
 .nav-part1-name {
   font-weight: bolder;
 }
 
+.nav-part1-profile {
+  cursor: pointer;
+}
+
+.nav-part1-profile:hover {
+  opacity: var(--hover-effect);
+}
+
 .nav-part2-profile {
   width: 100px;
+  margin-right: 20px;
+}
+
+.welcome-name p {
+  font-weight: bold;
 }
 
 .button:first-of-type {
@@ -139,7 +171,7 @@ body {
 }
 
 .button:hover {
-  opacity: 0.9;
+  opacity: var(--hover-effect);
 }
 
 /* BODY */
@@ -147,7 +179,6 @@ body {
   grid-area: body;
 
   display: grid;
-  gap: 15px;
   grid-template-columns: 3fr 1fr;
   grid-template-areas: "projects announcements" "projects trendings";
 
@@ -170,15 +201,33 @@ body {
 .projects {
   display: grid;
   gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   background-color: var(--main);
   padding: 20px;
   border-radius: 15px;
 
   border-left: 10px solid var(--lines);
+}
+
+.project-icons {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+}
+
+.project-icons i {
+  cursor: pointer;
+}
+
+.project-icons i:hover {
+  color: var(--lines);
 }
 
 /* ANNOUNCEMENTS */
@@ -191,8 +240,23 @@ body {
   gap: 20px;
 
   background-color: var(--main);
-  padding: 20px;
+  padding: 40px 20px;
   border-radius: 15px;
+}
+
+.announcement {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--letter);
+  cursor: pointer;
+}
+
+.announcement:hover {
+  opacity: var(--hover-effect);
+}
+
+.announcement:last-of-type {
+  padding-bottom: 0;
+  border: none;
 }
 
 /* TRENDINGS */
