@@ -8,7 +8,7 @@ An admin dashboard created with html and css with the goal of learning "grid lay
 
 ## Acknowledgements
 
-- Project idea and design by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+- Project idea and design by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
 - Icons from [Font Awesome](https://fontawesome.com/icons)
 
 ## Author
