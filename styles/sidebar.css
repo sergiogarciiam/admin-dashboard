@@ -1,0 +1,38 @@
+.sidebar-container {
+  grid-area: slidebar;
+
+  display: grid;
+  align-content: start;
+  align-items: start;
+  gap: 50px;
+
+  background-color: var(--sidebar);
+  color: var(--main);
+  font-size: x-large;
+
+  padding: 20px 0 0 20px;
+}
+
+.slidebar-part {
+  display: grid;
+}
+
+.slidebar-part a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  padding: 10px 0;
+
+  color: var(--main);
+  text-decoration: none;
+}
+
+.slidebar-part a:hover {
+  opacity: var(--hover-effect);
+  border-bottom: 3px solid var(--main);
+}
+
+.slidebar-part img {
+  width: 30px;
+}

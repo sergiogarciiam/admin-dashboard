@@ -1,0 +1,119 @@
+.body {
+  grid-area: body;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "projects announcements" "projects trendings";
+
+  background-color: var(--shearch);
+  padding-bottom: 100px;
+}
+
+.body > div {
+  padding: 50px 20px 0 20px;
+}
+
+.project,
+.announcements,
+.trendings {
+  box-shadow: 1px 1px 4px var(--shadow);
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+/* PROJECTS */
+.projects-container {
+  grid-area: projects;
+}
+
+.projects {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: var(--main);
+  padding: 20px;
+  border-radius: 15px;
+
+  border-left: 10px solid var(--lines);
+  cursor: pointer;
+}
+
+.project-icons {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+}
+
+.project-icons i {
+  cursor: pointer;
+}
+
+.project-icons i:hover {
+  color: var(--lines);
+}
+
+/* ANNOUNCEMENTS */
+.announcements-container {
+  grid-area: announcements;
+}
+
+.announcements {
+  display: grid;
+  gap: 20px;
+
+  background-color: var(--main);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+
+.announcement {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--letter);
+  cursor: pointer;
+}
+
+.announcement:last-of-type {
+  padding-bottom: 0;
+  border: none;
+}
+
+/* TRENDINGS */
+.trendings-container {
+  grid-area: trendings;
+}
+
+.trendings {
+  display: grid;
+  gap: 30px;
+
+  background-color: var(--main);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.trending {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.trending > img {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.trending-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

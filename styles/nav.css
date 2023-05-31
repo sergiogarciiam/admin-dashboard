@@ -1,0 +1,95 @@
+.nav-container {
+  grid-area: nav;
+
+  display: grid;
+  gap: 20px;
+
+  z-index: 1;
+  padding: 20px;
+  box-shadow: 0 3px 3px var(--shadow);
+}
+
+.nav-part2,
+.nav-part1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 0px 50px;
+}
+
+.fa-bars {
+  opacity: 0;
+}
+
+.shearch {
+  flex: 0.8;
+
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 20px;
+
+  background-color: var(--shearch);
+  border: none;
+}
+
+.nav-part2-profile,
+.nav-part1-profile {
+  border-radius: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.nav-part1 i:first-of-type {
+  font-size: 20px;
+}
+
+.nav-part1 i:last-of-type {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-part1 i:last-of-type:hover {
+  color: var(--sidebar);
+}
+
+.nav-part1-name {
+  font-weight: bolder;
+}
+
+.nav-part1-profile {
+  cursor: pointer;
+}
+
+.nav-part2-profile {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.welcome-name p {
+  font-weight: bold;
+}
+
+.button:first-of-type {
+  margin-left: auto;
+}
+
+.button {
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  background-color: var(--sidebar);
+  color: var(--main);
+  border: none;
+
+  font-size: 1.3em;
+
+  cursor: pointer;
+}
+
+.button:last-of-type {
+  margin-right: 0;
+}
